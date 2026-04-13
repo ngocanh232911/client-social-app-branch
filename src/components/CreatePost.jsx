@@ -74,7 +74,7 @@ const CreatePost = ({ onPostCreated }) => {
       }
 
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:3000/api/post", {
+      const res = await fetch("https://server-social-app-branch-1.onrender.com/api/post", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
