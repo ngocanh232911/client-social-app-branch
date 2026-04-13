@@ -16,7 +16,7 @@ const FollowButton = ({ userId, initialFollowing, token }) => {
     setLoading(true);
     try {
       const action = following ? "unfollow" : "follow";
-      const res = await fetch(`http://localhost:3000/api/users/${userId}/${action}`, {
+      const res = await fetch(`https://server-social-app-branch-1.onrender.com/api/users/${userId}/${action}`, {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },
       });
