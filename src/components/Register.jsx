@@ -12,7 +12,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://server-social-app-branch-1.onrender.com", {
+      const response = await fetch("https://server-social-app-branch-1.onrender.com/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
