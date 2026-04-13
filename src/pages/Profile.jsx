@@ -12,7 +12,7 @@ const userData = localStorage.getItem("user");
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await fetch(`http://localhost:3000/api/users/${userId}`, {
+      const res = await fetch(`https://server-social-app-branch-1.onrender.com/users/${userId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
